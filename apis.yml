@@ -1,7 +1,30 @@
 aid: abwab-ai
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/abwab-ai.png
 name: Abwab Ai
-description: Abwab Ai is a company surfaced as a portfolio company of speedinvest and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Abwab.ai is an AI-powered credit intelligence platform for MSME (micro, small,
+  and medium enterprise) lending, used by banks, NBFIs, fintechs, funds, and
+  digital platforms to originate loans, assess credit risk, price, and monitor
+  MSME loan portfolios across the full lending lifecycle. The platform combines
+  rules and AI models for real-time credit decisioning, agentic credit
+  intelligence that surfaces leads and flags portfolio risk, and embedded
+  financing for existing SME platforms. It is API-first, plugging into existing
+  loan-origination and core-banking systems without core replacement, with a
+  versioned REST API (api.abwab.ai), webhook notifications, and Python/Node.js
+  SDKs in development. Abwab is focused on the Saudi Arabian market with
+  in-Kingdom data residency and alignment to the SAMA Cybersecurity Framework,
+  PDPL, and Sharia-compliant lending (used by Kafalah). Backed by Speedinvest.
 url: https://raw.githubusercontent.com/api-evangelist/abwab-ai/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,9 +37,67 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
-apis: []
+- MSME Lending
+- Credit Intelligence
+- Credit Decisioning
+- Credit Scoring
+- Fintech
+- Embedded Finance
+- Lending
+- Saudi Arabia
+- Artificial Intelligence
+apis:
+- name: Abwab.ai Credit Intelligence API
+  description: >-
+    Versioned REST API for MSME credit assessment and decisioning. Submits
+    applications for real-time scoring and returns a decision, risk flags, and
+    pricing (e.g. POST /v1/assessments). Supports webhook notifications for
+    assessment completion and status changes.
+  humanURL: https://abwab.ai/platform/api
+  baseURL: https://api.abwab.ai
+  tags:
+  - Credit Intelligence
+  - Credit Decisioning
+  - MSME Lending
+  properties:
+  - type: Webhooks
+    url: asyncapi/abwab-ai-webhooks.yml
+  - type: Conventions
+    url: conventions/abwab-ai-conventions.yml
+common:
+- type: DomainSecurity
+  url: security/abwab-ai-domain-security.yml
+- type: Website
+  url: https://abwab.ai
+- type: DeveloperPortal
+  url: https://abwab.ai/docs
+- type: Documentation
+  url: https://abwab.ai/docs
+- type: APIReference
+  url: https://abwab.ai/docs
+- type: Blog
+  url: https://abwab.ai/blog
+- type: Support
+  url: https://abwab.ai/contact
+- type: TermsOfService
+  url: https://abwab.ai/terms
+- type: PrivacyPolicy
+  url: https://abwab.ai/privacy
+- type: Compliance
+  url: https://abwab.ai/platform/compliance
+- type: Conformance
+  url: conformance/abwab-ai-conformance.yml
+- type: Lifecycle
+  url: lifecycle/abwab-ai-lifecycle.yml
+- type: LLMsTxt
+  url: llms/abwab-ai-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

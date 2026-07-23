@@ -1,0 +1,25 @@
+generated: '2026-07-17'
+method: searched
+source: https://abwab.ai/platform/api
+spec_type: Webhooks
+summary: >-
+  Abwab.ai documents webhook notifications for credit-assessment lifecycle
+  events. No machine-readable AsyncAPI document is published at capture time, so
+  this is a captured webhook catalog (type: Webhooks) rather than a verbatim
+  AsyncAPI spec. Event names/payloads below are described in prose on the public
+  API page; payload schemas are not published and are not fabricated here.
+delivery:
+  mechanism: HTTP webhook (push)
+  direction: outbound
+events:
+  - name: assessment.completed
+    description: Fired when a submitted credit assessment finishes processing.
+    documented_as: "assessment completion"
+  - name: assessment.status_changed
+    description: Fired when the status of an assessment changes.
+    documented_as: "status changes"
+notes: >-
+  Event identifiers above are normalized labels for the documented "assessment
+  completion" and "status changes" notifications; confirm exact event type
+  strings and payload schemas against Abwab developer documentation (/docs)
+  before integrating.

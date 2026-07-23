@@ -1,0 +1,34 @@
+# Abwab.ai
+
+> AI-powered credit intelligence platform for MSME (micro, small, and medium enterprise) lending. Banks, NBFIs, fintechs, funds, and platforms use Abwab to originate loans, assess credit risk, price, and monitor MSME loan portfolios across the full lending lifecycle. API-first, versioned REST API with webhook notifications; focused on the Saudi Arabian market with in-Kingdom data residency and SAMA/PDPL/Sharia alignment. Backed by Speedinvest.
+
+## APIs
+
+- [Credit Intelligence API](https://abwab.ai/platform/api): Versioned REST API for MSME credit assessment and decisioning (e.g. POST /v1/assessments returns score, decision, risk_flags, price). Base URL https://api.abwab.ai.
+
+## Docs
+
+- [Documentation](https://abwab.ai/docs): Docs hub including REST API reference.
+- [API & Integrations](https://abwab.ai/platform/api): Integration patterns (API-to-API, file-based batch, embedded widget, on-prem agent), webhooks, and SDKs.
+- [Compliance & Security](https://abwab.ai/platform/compliance): SAMA Cybersecurity Framework, PDPL, Sharia validation, in-Kingdom data residency, TLS 1.3 / AES-256.
+- [Products](https://abwab.ai/products): Loan origination, credit decisioning, agentic credit intelligence, embedded financing.
+- [Case Studies](https://abwab.ai/case-studies)
+- [Blog](https://abwab.ai/blog)
+
+## Artifacts
+
+- [API conventions](https://raw.githubusercontent.com/api-evangelist/abwab-ai/refs/heads/main/conventions/abwab-ai-conventions.yml)
+- [Webhook catalog](https://raw.githubusercontent.com/api-evangelist/abwab-ai/refs/heads/main/asyncapi/abwab-ai-webhooks.yml)
+- [Conformance / compliance](https://raw.githubusercontent.com/api-evangelist/abwab-ai/refs/heads/main/conformance/abwab-ai-conformance.yml)
+- [Lifecycle](https://raw.githubusercontent.com/api-evangelist/abwab-ai/refs/heads/main/lifecycle/abwab-ai-lifecycle.yml)
+
+## Legal
+
+- [Terms of Service](https://abwab.ai/terms)
+- [Privacy Policy](https://abwab.ai/privacy)
+
+## Notes for agents
+
+- Integrations referenced: SIMAH, Bayan, Qawaem, Lean, Tarabut, GOSI, Balady, Thiqah, Focal.
+- Python and Node.js SDKs are in active development (not yet published) at capture time.
+- Authentication scheme, pagination, and idempotency conventions are not publicly documented; consult /docs or Abwab support before integrating.

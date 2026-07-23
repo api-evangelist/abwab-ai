@@ -1,0 +1,38 @@
+generated: '2026-07-17'
+method: searched
+source: https://abwab.ai/platform/compliance
+summary: >-
+  Compliance and security posture asserted on Abwab.ai's public compliance page.
+  Abwab targets the Saudi financial-services market and aligns to regulator
+  frameworks rather than the generic SOC 2 / ISO 27001 set, which are not
+  claimed. Technical controls named: TLS 1.3 in transit, AES-256 at rest,
+  role-based access, third-party penetration testing, and in-Kingdom data
+  residency.
+standards:
+  - id: sama-cybersecurity-framework
+    conforms: true
+    evidence: "Compliance page claims alignment across all four SAMA CSF domains"
+  - id: sama-outsourcing-guidelines
+    conforms: true
+    evidence: "Named on compliance page"
+  - id: pdpl
+    conforms: true
+    evidence: "Personal Data Protection Law compliance claimed for borrower records"
+  - id: sharia-compliance
+    conforms: true
+    evidence: "Sharia-validated; used by Kafalah"
+  - id: data-residency-ksa
+    conforms: true
+    evidence: "In-Kingdom (Saudi Arabia) data residency; on-premise deployment option"
+  - id: tls-1.3
+    conforms: true
+    evidence: "TLS 1.3 in transit stated on compliance page"
+  - id: soc2
+    conforms: false
+    evidence: "Not claimed on public compliance page"
+  - id: iso-27001
+    conforms: false
+    evidence: "Not claimed on public compliance page"
+  - id: pci-dss
+    conforms: false
+    evidence: "Not claimed on public compliance page"

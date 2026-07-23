@@ -1,0 +1,48 @@
+generated: '2026-07-17'
+method: searched
+source: https://abwab.ai/platform/api
+summary: >-
+  Cross-cutting request/response conventions for the Abwab.ai Credit
+  Intelligence API, captured from the public API & Integrations page. Abwab
+  describes an API-first, RESTful surface with clean JSON and versioned
+  endpoints, plus webhook notifications. Fine-grained conventions
+  (authentication scheme, pagination, idempotency, error envelope) are not
+  publicly documented at capture time and are left unasserted rather than
+  fabricated.
+architecture:
+  style: REST
+  media_type: application/json
+  notes: "Clean JSON, versioned endpoints (documented example: POST /v1/assessments -> 200)"
+versioning:
+  scheme: uri-path
+  current: v1
+  docs: https://abwab.ai/platform/api
+integration_patterns:
+  - api_to_api: RESTful endpoints for real-time credit decisions
+  - file_based: CSV/Excel batch upload for portfolio processing
+  - embedded_widget: Drop-in UI components
+  - on_prem_agent: On-premise deployment option
+idempotency:
+  documented: false
+  note: No idempotency-key contract is publicly documented; not asserted.
+pagination:
+  documented: false
+  note: No pagination convention is publicly documented.
+error_envelope:
+  documented: false
+  note: >-
+    A documented success response includes score, decision, risk_flags, and
+    price fields; the error envelope shape is not published.
+webhooks:
+  supported: true
+  events:
+    - assessment completion
+    - status changes
+  reference: asyncapi/abwab-ai-webhooks.yml
+sdks:
+  status: in-development
+  languages: [python, nodejs]
+cross_links:
+  webhooks: asyncapi/abwab-ai-webhooks.yml
+  lifecycle: lifecycle/abwab-ai-lifecycle.yml
+  conformance: conformance/abwab-ai-conformance.yml

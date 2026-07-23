@@ -1,0 +1,22 @@
+generated: '2026-07-17'
+method: searched
+source: https://abwab.ai/platform/api
+summary: >-
+  Lifecycle posture for the Abwab.ai Credit Intelligence API. The API advertises
+  versioned endpoints (v1). No public deprecation policy, SLA, or status page was
+  found at capture time; those fields are recorded as not-found rather than
+  fabricated.
+versioning:
+  scheme: uri-path
+  current: v1
+  docs: https://abwab.ai/platform/api
+deprecation:
+  policy_url: null
+  sunset_header: unknown
+  note: No public deprecation/sunset policy located.
+sla:
+  url: null
+  note: No public SLA located.
+status_page:
+  url: null
+  note: No public status page located.
